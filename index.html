@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neper Studio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/Favicon.png">
+    <script src="https://kit.fontawesome.com/a2459d136c.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imgs/Neper Studio-Logo.png" alt="Neper Studio Logo">
+
+            <ul class="header-menu" id="sidemenu">
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                <li class="selected" id="menu_home"><a href="#home">Home</a></li>
+                <li id="menu_about"><a href="#about">About</a></li>
+                <li id="menu_apps"><a href="#apps">Apps</a></li>
+                <li id="menu_contact"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+
+            <div class="hello-and-social">
+                
+                <p><span>Neper Studio</span></p>
+                <p>Google Play Developer</p>
+
+                <div class="header-social">
+
+                    <a href="https://play.google.com/store/apps/dev?id=6152381138817364700" target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                    <a href="https://twitter.com/NeperStudio" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UC3m2VElt6MtxGgCNOQ0v1Ug" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/neperstudio" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="header-img-container">
+
+                <img src="imgs/imgperfil.jpeg" alt="Neper Studio Profile Picture">
+
+            </div>
+
+        </section>
+
+        <section id="about">
+
+            <h1>About</h1>
+
+            <p class="pleft" style="background-color: #3bccff;">Neper Studio is a personal account on Google Play whose purpose is to provide useful applications in everyday life.</p>
+            <p class="pright" style="background-color: #48ff48;">It was created by José Eduardo Rocha, a software engineering student, in March 2022 (the month remembered being the month in which the first application was published).</p>
+            <p class="pleft" style="background-color: #ffd400;">All applications are being developed in Java and XML using Android Studio, one of the most popular tools for building android applications.</p>
+            <p class="pright" style="background-color: #ff3333;">I hope you can get the most out of the apps and that they are useful in your study/work/hobby!</p>
+
+        </section>
+
+        <section id="apps">
+
+            <h1>Apps</h1>
+
+            <div class="apps_panel">
+
+                <a href="pages/bc_info.html" target="_blank" class="app">
+                    <img src="imgs/app1logo.png" alt="Base Converter: 2 to 20 - Logo">
+                    <p>Base Converter: 2 to 20</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h1>Contact me</h1>
+
+            <form>
+
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+
+            <span id="msg">Contact Form unavailable, please contact me by email - zetastudio21@gmail.com</span>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>Neper Studio</h2>
+
+        <p>&#169; JCR. All rigths reserved. <a href="pages/wb_pp.html" target="_blank">Privacy Policy</a></p>
+
+    </footer>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+
+        function openmenu() {
+
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
