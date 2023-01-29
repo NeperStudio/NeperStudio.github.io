@@ -93,6 +93,7 @@ main h2 {
 .app_basic_info img {
 
     width: 200px;
+    border-radius: 30px;
 }
 
 main p {

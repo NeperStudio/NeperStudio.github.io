@@ -258,7 +258,8 @@ nav {
 .apps_panel {
 
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 10px 70px;
     background-color: white;
     border-radius: 30px;
@@ -280,13 +281,14 @@ nav {
 
     width: 200px;
     margin-bottom: 5px;
+    border-radius: 30px;
 }
 
 .app p {
 
     font-family: 'Georama', sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 
@@ -608,10 +610,10 @@ footer p {
     }
     
     .app {
-    
+        flex: 100%;
         width: fit-content;
-        margin: 20px auto;
-        padding: 20px 30px;
+        margin: 20px 30px;
+        padding: 20px 5px;
     }
     
     .app img {
